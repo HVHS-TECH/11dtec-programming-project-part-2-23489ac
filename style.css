@@ -1,43 +1,61 @@
-
-/* style.css */
+/* Page background and font */
 body {
+  background: #d0e7ff; 
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
+/* Big heading */
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #004080; 
+}
+
+/* Main box */
+#app {
   background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin: auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px #6699cc; 
+  color: #000;
 }
 
-label, input, select {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
+label {
+  font-size: 18px;   
+  font-weight: 600;  
+  display: block;    
+  margin-top: 15px; 
+  color: #101111;    
 }
 
+input, select {
+  width: 95%;
+  padding: 16px;
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  border: 1.5px solid #337ab7;
+  border-radius: 2px;
+}
+
+/* Buttons */
 button {
-  background-color: #007bff;
+  background: #3366cc; 
   color: white;
-  padding: 10px;
+  padding: 16px;
+  width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
-}
-
-#result {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #e7f3fe;
-  border: 1px solid #b3d4fc;
-  border-radius: 5px;
+  background: #003d99; 
 }

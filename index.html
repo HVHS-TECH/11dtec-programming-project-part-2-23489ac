@@ -1,37 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rob's Rentals</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Rob's Rentals</h1>
-    <form id="rentalForm">
-      <label for="userName">Your Name:</label>
-      <input type="text" id="userName" required>
-
-      <label for="seatNumber">Seats Needed:</label>
-      <input type="number" id="seatNumber" min="1" max="8" required>
-
-      <label for="rentalDays">Days to Rent (1-30):</label>
-      <input type="number" id="rentalDays" min="1" max="30" required>
-
-      <label for="insurance">Add Insurance ($15/day)?</label>
-      <select id="insurance">
-        <option value="no">No</option>
-        <option value="yes">Yes</option>
-      </select>
-
-      <button type="button" onclick="startRental()">Start Rental</button>
-    </form>
-
-    <div id="result"></div>
+  <div class="overlay">
+    <h1 class="main-title">Rob's Rentals</h1>
+    <div class="container" id="app">
+      <button onclick="startRental()">Start Rental</button>
+    </div>
   </div>
-
   <script src="main.js"></script>
 </body>
 </html>
-
