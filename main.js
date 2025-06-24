@@ -24,7 +24,7 @@ let selectedCar = null;
 function startRental() {
   const app = document.getElementById("app");
   app.innerHTML = `
-   <label>Welcome to  rob's rental</label>
+   <label>Welcome to rob's rental</label>
     <label>What is your name?</label>
     <input type="text" id="nameInput" />
     <button onclick="askSeats()">Next</button>
@@ -130,6 +130,7 @@ function chooseCar() {
   `;
 }
 
+// Show summary of rental
 function showSummary() {
   const choiceIndex = Number(document.getElementById("carChoice").value);
   selectedCar = matchingCars[choiceIndex];
